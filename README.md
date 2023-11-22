@@ -1,2 +1,2 @@
 # dog-site
-Full Stack Web App to display breeders and their dogs
+Full stack web app to display breeders and their dogs.
