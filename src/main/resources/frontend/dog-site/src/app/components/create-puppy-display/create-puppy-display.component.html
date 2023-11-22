@@ -1,0 +1,50 @@
+<div class = "createDogBody" *ngIf = "isDisplayed">
+
+<div class = "createDog">
+    <button mat-flat-button class = "createCloseButton" (click) = "toggleDisplay()">
+        <mat-icon>clear</mat-icon>
+    </button>
+    <br>
+    <br>
+    <h1 class = "addDog">Add Dog</h1>
+    <br>
+
+    <mat-form-field appearance="outline">
+        <mat-label>Dog Name</mat-label>
+        <input matInput placeholder="Name" [(ngModel)] = "name" required>
+  </mat-form-field>
+
+  <br>
+
+  <mat-form-field appearance="outline">
+    <mat-label>Dog Breed</mat-label>
+    <input matInput placeholder="Breed" [(ngModel)] = "breed" required>
+</mat-form-field>
+
+<br>
+
+<mat-form-field appearance="outline">
+    <mat-label>Dog Age</mat-label>
+    <input matInput placeholder="Age" [(ngModel)] = "age" required>
+</mat-form-field>
+
+<br>
+
+<mat-form-field appearance="outline">
+    <mat-label>Dog Mother</mat-label>
+    <input matInput placeholder="Mother" [(ngModel)] = "mother" required>
+</mat-form-field>
+
+<br>
+
+<mat-form-field appearance="outline">
+    <mat-label>Dog Father</mat-label>
+    <input matInput placeholder="Father" [(ngModel)] = "father" required>
+</mat-form-field>
+
+<br>
+
+<button mat-flat-button class = "createDogButton" (click) = "createDog()">Create</button>
+
+</div>
+</div>

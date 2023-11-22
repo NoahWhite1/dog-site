@@ -1,0 +1,55 @@
+.breederCard{
+    margin-top: 20px;
+    margin-left: 20px;
+    max-width: 300px;
+    float: left;
+    border-style: solid;
+    border-color: rgb(153, 153, 153);
+    background-color: rgb(253, 203, 158);
+    display: block;
+    align-content: center;
+    align-self: center;
+}
+
+.breederCard:hover{
+    box-shadow: 5px 5px;
+}
+
+.breeder-card-header{
+    text-align: center;
+    display: block;
+    align-content: center;
+    align-self: center;
+    margin: auto;
+}
+
+img{
+    position: relative;
+    display: block;
+    height: 10%;
+    width:  50%;
+    border-radius: 50%;
+    border-style: solid;
+    margin: auto;
+}
+
+.breederCardTitle{
+    width: 100%;
+    height: 100%;
+    color: black;
+    margin: auto;
+    display: block;
+    text-align: center;
+    align-items: center;
+    padding-top: 10px;
+}
+
+.breederCardSubTitle{
+    width: 100%;
+    height: 100%;
+    color: rgb(94, 92, 92);
+    margin: auto;
+    display: block;
+    text-align: center;
+    padding-top: 10px;
+}

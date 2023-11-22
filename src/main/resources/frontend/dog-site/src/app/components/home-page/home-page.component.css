@@ -1,0 +1,12 @@
+.searchInput{
+    margin-top: 20px;
+    margin-left: 42%;
+    width: 300px;
+    display: block;
+}
+
+.puppyContainer{
+    margin-left: 40px;
+    padding-bottom: 30px;
+    display: inline-block;
+}

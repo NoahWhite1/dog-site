@@ -1,0 +1,45 @@
+.carouselContainer{
+    width: 800px;
+    height: 500px;
+    margin-left: 530px;
+    background-color: black;
+    display: block;
+    text-align: center;
+    position: relative;
+}
+
+
+
+img{
+    max-height: 500px;
+    min-height: 500px;
+
+    max-width: 800px;
+    min-width: 800px;
+
+}
+
+.carouselButtonLeft{
+    visibility: hidden;
+    height: 500px;
+    position: absolute;
+    background-color: rgba(63, 62, 63, 0.329);
+    color: white;
+}
+
+.carouselButtonRight{
+    margin-left: 736px;
+    visibility: hidden;
+    height: 500px;
+    position: absolute;
+    background-color:rgba(63, 62, 63, 0.329);
+    color: white;
+}
+
+#carouselArea:hover .carouselButtonLeft{
+    visibility: visible;
+}
+
+#carouselArea:hover .carouselButtonRight{
+    visibility: visible;
+}

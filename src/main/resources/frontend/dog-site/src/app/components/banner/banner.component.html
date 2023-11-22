@@ -1,0 +1,14 @@
+<app-login-display (toggleLoginIcon) = "toggleLoginIcon()"></app-login-display>
+<mat-toolbar color = "Primary">
+    <span class = "title">Spitfire Kennels</span>
+    <img src="../../../assets/images/spitfire_logo.png" class = "logo">
+    <span class="login-spacer"></span>
+    <button (click) = "loginDisplay()" *ngIf="!displayProfile"> 
+      <mat-icon class = "loginIcon">person</mat-icon>
+    </button>
+
+    <button mat-flat-button *ngIf="displayProfile" (click) = "logout()"> 
+      Logout
+    </button>
+
+  </mat-toolbar>

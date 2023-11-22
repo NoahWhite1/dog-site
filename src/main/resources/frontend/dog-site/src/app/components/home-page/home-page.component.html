@@ -1,0 +1,15 @@
+<app-banner></app-banner>
+<app-nav-bar></app-nav-bar>
+
+<mat-form-field appearance="outline" class = "searchInput">
+    <mat-label>Puppy Name and Breed</mat-label>
+    <input matInput class = "searchBar">
+    <mat-icon matSuffix>search</mat-icon>
+</mat-form-field>
+
+<app-home-page-carousel></app-home-page-carousel>
+
+<div class = "puppyContainer">
+  <app-puppy-card *ngFor = "let d of dogs" [dog] = d></app-puppy-card>
+</div>
+

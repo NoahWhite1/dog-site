@@ -1,0 +1,42 @@
+.puppyCard{
+    margin-top: 20px;
+    margin-left: 20px;
+    max-width: 300px;
+    float: left;
+    border-style: solid;
+    border-color: rgb(153, 153, 153);
+    background-color: rgb(253, 203, 158);
+    display: block;
+    align-content: center;
+    align-self: center;
+}
+
+.puppyCardHeader{
+    text-align: center;
+    display: block;
+    align-content: center;
+    align-self: center;
+    margin: auto;
+}
+
+.puppyCard:hover{
+    box-shadow: 5px 5px;
+}
+
+img{
+    max-height: 400px;
+}
+
+.puppyCardTitle{
+    color: black;
+    margin: auto;
+    display: block;
+    position: relative;
+}
+
+.puppyCardSubTitle{
+    color: rgb(94, 92, 92);
+    margin: auto;
+    display: block;
+    position: relative;
+}

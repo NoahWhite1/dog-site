@@ -1,0 +1,23 @@
+.login-spacer {
+    flex: 1 1 auto;
+  }
+.title{
+    margin-left: 43%;
+}
+
+.mat-toolbar{
+background-color: #1B262C;
+color: white;
+height: 80px;
+font-size: xx-large;
+}
+
+.logo{
+    width: 50px;
+    height: 50px;
+    margin-left: 5px;
+}
+
+.loginIcon{
+    border-radius: 50%,50%,50%,50%;
+}

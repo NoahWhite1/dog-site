@@ -1,0 +1,26 @@
+<div class="loginBackground" *ngIf = "loginDisplay">
+    <div class = "loginBody">
+
+        <button mat-flat-button class = "loginCloseButton" (click) = "displayLogin()">
+            <mat-icon>clear</mat-icon>
+        </button>
+        <span class = "loginText">Login</span>
+
+        <br>
+        
+        <mat-form-field appearance="fill" class = "usernameInput">
+            <mat-label class = "fillerText">Username</mat-label>
+            <input matInput class = "inputText" [(ngModel)] = "username" required>
+        </mat-form-field>
+
+        <mat-form-field appearance="fill" class = "passwordInput">
+            <mat-label class="fillerText">Password</mat-label>
+            <input matInput class = "inputText" [(ngModel)] = "password" required>
+        </mat-form-field>
+        
+        <br>
+        
+        <button mat-flat-button (click) = "loginBreeder()">Login</button>
+
+    </div>
+</div>

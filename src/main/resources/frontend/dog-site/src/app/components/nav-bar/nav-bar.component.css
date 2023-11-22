@@ -1,0 +1,29 @@
+.mat-toolbar{
+    background-color: #0F4C75;
+}
+
+button{
+    margin-left: 10px;
+    height: 40px;
+    font-size: large;
+    background-color: #1a7dbe;
+    color: white;
+}
+
+.menubtns{
+    margin-left: 44%;
+}
+.breederDropdownMenu{
+    width: 150px;
+    height: auto;
+    text-align: center;
+    display: block;
+    align-self: center;
+    display: inline-block;
+    margin: 0%;
+}
+
+/deep/ .mat-menu-content{
+    background-color: rgb(253, 203, 158) !important;
+    text-align: center;
+}

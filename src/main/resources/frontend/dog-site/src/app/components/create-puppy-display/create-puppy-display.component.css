@@ -1,0 +1,43 @@
+.createDog{
+    display: inline-block;
+    margin-left: 45%;
+    margin-top: 15%;
+    background-color: burlywood;
+    border-radius: 5%;
+    width: 300px;
+    height: 550px;
+    text-align: center;
+}
+
+.addDog{
+    text-align: center;
+}
+
+.createDogBody{
+    background-color: rgba(0, 0, 0, 0.37);
+    min-width: 100%;
+    min-height: 100%;
+    width: 100%;
+    height: 100%;
+    color: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
+.createDogButton{
+    background-color: teal;
+    color: white;
+    width: 100px;
+    height: 50px;
+    font-size: x-large;
+}
+
+.createCloseButton{
+    position: absolute;
+    margin-left: 70px;
+    margin-top: 10px;
+    background-color: red;
+    color: white;
+}
