@@ -1,0 +1,31 @@
+<div class="create-dog-container" *ngIf="isDisplayed">
+    <div class="create-dog-display">
+        <button mat-flat-button class="create-dog-exit-button" (click)="toggleDisplay()">
+            Close
+        </button>
+        <h1 class="add-dog-title">Add Dog</h1>
+        <form [formGroup]="dogForm" (ngSubmit)="createDog()">
+            <mat-form-field [color]="white" appearance="outline" class="data-input">
+                <mat-label class="input-title">Dog Name</mat-label>
+                <input matInput placeholder="Name" type="text" formControlName="dogName" required>
+            </mat-form-field>
+            <mat-form-field appearance="outline" class="data-input">
+                <mat-label class="input-title">Dog Breed</mat-label>
+                <input matInput placeholder="Breed" type="text" formControlName="dogBreed" required>
+            </mat-form-field>
+            <mat-form-field appearance="outline" class="data-input">
+                <mat-label class="input-title">Dog Age</mat-label>
+                <input matInput placeholder="Age" type="number" formControlName="dogAge" required>
+            </mat-form-field>
+            <mat-form-field appearance="outline" class="data-input">
+                <mat-label class="input-title">Dog Mother</mat-label>
+                <input matInput placeholder="Mother" type="text" formControlName="dogMother" required>
+            </mat-form-field>
+            <mat-form-field appearance="outline" class="data-input">
+                <mat-label class="input-title">Dog Father</mat-label>
+                <input matInput placeholder="Father" type="text" formControlName="dogFather" required>
+            </mat-form-field>
+            <button mat-flat-button class="create-dog-button" type="submit" [disabled]="!dogForm.valid">Create</button>
+        </form>
+    </div>
+</div>

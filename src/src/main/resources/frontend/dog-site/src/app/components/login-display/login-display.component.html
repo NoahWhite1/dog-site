@@ -1,0 +1,23 @@
+<div class="login-background" *ngIf = "loginDisplay">
+    <div class="login-body">
+        <button mat-flat-button class="login-exit-button" (click)="displayLogin()">Close</button>
+        <h2 class = "login-title">Login</h2>    
+        <form name="user-login" class="user-login-form">
+            <mat-form-field appearance="fill" class = "username-input-text" [color]="white">
+                <mat-label class = "filler-text" name = "usernameText">Username</mat-label>
+                <input matInput class = "usernameInputText" type = "text" [(ngModel)] = "username" placeholder="username" [ngModelOptions]="{standalone: true}" autocomplete="on" [name]="username" required>
+                <button mat-icon-button matSuffix disabled>
+                    <mat-icon></mat-icon>
+                </button>
+            </mat-form-field>
+            <mat-form-field appearance="fill" class = "password-input-text" [color]="white">
+                <mat-label class="filler-text">Password</mat-label>
+                <input matInput class = "passwordInputText" [type]="hide ? 'password' : 'text'" [(ngModel)] = "password" placeholder="password" autocomplete="on" name="password" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide" required>
+                <button mat-icon-button matSuffix (click)="hide = !hide" >
+                    <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+                  </button>
+            </mat-form-field>
+            <button mat-flat-button class="login-button" (click)="loginBreeder()">Login</button>
+        </form>
+    </div>
+</div>

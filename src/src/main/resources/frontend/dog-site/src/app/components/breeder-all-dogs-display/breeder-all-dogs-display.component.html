@@ -1,0 +1,7 @@
+<div class="breeder-header-container">
+    <button mat-flat-button class="back-button" (click)="viewBreederPage()">Back to Breeder Page</button>
+    <h1 class="breeder-title">{{breeder.name}}'s Dogs</h1>
+</div>
+<div class="puppy-container">
+    <app-puppy-card *ngFor="let d of breeder.dogs" [dog]="d" class="puppy-card"></app-puppy-card>
+</div>

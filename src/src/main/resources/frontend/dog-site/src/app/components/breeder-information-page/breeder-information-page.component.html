@@ -1,0 +1,69 @@
+<div class="container-holder">
+    <div class="container" style="border-color:#1a7dbe">
+        <div class="data-container">
+            <p class="container-title">Breeder</p>
+            <div class="information">
+                <div class="information-category">ID: </div>
+                <div class="information-displayed">{{breeder.bId}}</div>
+            </div>
+            <div class="information">
+                <div class="information-category">Name: </div>
+                <div class="information-displayed">{{breeder.name}}</div>
+            </div>
+            <div class="information">
+                <div class="information-category">Username: </div>
+                <div class="information-displayed">{{breeder.username}}</div>
+            </div>
+            <div class="information">
+                <div class="information-category">Email: </div>
+                <div class="information-displayed">{{breeder.email}}</div>
+            </div>
+        </div>
+        <div class="image-container">
+            <img src="/../../assets/images/lab1.jpg" alt="dog-image" class="display-image">
+        </div>
+    </div>
+    <div class="container" style="border-color: rgb(253, 203, 158)">
+        <div class="dog-container" *ngIf="breeder.dogs.length > 0">
+            <div class="dog-container-top-section">
+                <p class="container-title">Breeders Dogs</p>
+                <div class="top-section-content">
+                    <button mat-button class="carousel-button"
+                        (click)="rotateDogCarouselAndSelectedDisplay(false, true); toggleEvents();">
+                        <mat-icon>arrow_back_ios</mat-icon>
+                    </button>
+                    <app-puppy-card [dog]="dogSelected" class="dog-card"></app-puppy-card>
+                    <button mat-button class="carousel-button"
+                        (click)="rotateDogCarouselAndSelectedDisplay(true, true); toggleEvents();">
+                        <mat-icon>arrow_forward_ios</mat-icon>
+                    </button>
+                </div>
+            </div>
+            <div class="rotate-gallery-controls">
+                <button mat-button class="carousel-button" (click)="rotateDogCarouselAndSelectedDisplay(false, false)">
+                    <mat-icon>arrow_back_ios</mat-icon>
+                </button>
+                <mat-form-field class="dog-dropdown">
+                    <mat-label class="dog-select">Dog</mat-label>
+                    <mat-select [(value)] = "dogSelected" class="dog-select">
+                        <mat-option  class="dog-panel" *ngFor="let d of breeder.dogs" [value]="d">{{d.name}} ({{d.breed}})</mat-option>
+                    </mat-select>
+                </mat-form-field>
+                <button mat-button class="carousel-button" (click)="rotateDogCarouselAndSelectedDisplay(true, false)">
+                    <mat-icon>arrow_forward_ios</mat-icon>
+                </button>
+            </div>
+            <div class="dog-container-bottom-section">
+                <div class="puppy-carousel">
+                    <app-puppy-card *ngFor="let dog of dogsInView" [dog]="dog" class="puppy-carousel-card" @slide
+                        (@slide.start)="isSliding = true" (@slide.done)="isSliding = false"></app-puppy-card>
+                </div>
+            </div>
+            <button mat-button color="primary" class="view-all-dogs-button" (click)="viewAllDogs()">View All Dogs</button>
+        </div>
+        <div class="dogs-not-available" *ngIf="breeder.dogs.length === 0">
+            <p class="dogs-not-available-text">This breeder has no dogs listed
+                yet...</p>
+        </div>
+    </div>
+</div>

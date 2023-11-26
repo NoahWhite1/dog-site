@@ -1,0 +1,59 @@
+<div class="container-holder">
+    <div class="container">
+        <div class = "data-container">
+        <p class="container-title">Dog</p>
+        <div class="information">
+            <div class="information-category">ID: </div>
+            <div class="information-displayed">{{dog.dId}}</div>
+        </div>
+        <div class="information">
+            <div class="information-category">Name: </div>
+            <div class="information-displayed">{{dog.name}}</div>
+        </div>
+        <div class="information">
+            <div class="information-category">Breed: </div>
+            <div class="information-displayed">{{dog.breed}}</div>
+        </div>
+        <div class="information">
+            <div class="information-category">Age: </div>
+            <div class="information-displayed">{{dog.age}}</div>
+        </div>
+        <div class="information">
+            <div class="information-category">Mother: </div>
+            <div class="information-displayed">{{dog.mother}}</div>
+        </div>
+        <div class="information">
+            <div class="information-category">Father: </div>
+            <div class="information-displayed">{{dog.father}}</div>
+        </div>
+    </div>
+        <div class="image-container">
+            <img src="/../../assets/images/lab1.jpg" alt="dog-image" class="display-image">
+        </div>
+    </div>
+    <div class="container">
+        <div class="data-container">
+        <p class="container-title">Breeder</p>
+        <div class="information">
+            <div class="information-category">ID: </div>
+            <div class="information-displayed">{{dog.breeder.bId}}</div>
+        </div>
+        <div class="information">
+            <div class="information-category">Name: </div>
+            <div class="information-displayed">{{dog.breeder.name}}</div>
+        </div>
+        <div class="information">
+            <div class="information-category">Username: </div>
+            <div class="information-displayed">{{dog.breeder.username}}</div>
+        </div>
+        <div class="information">
+            <div class="information-category">Email: </div>
+            <div class="information-displayed">{{dog.breeder.email}}</div>
+        </div>
+        <button mat-flat-button class="breeder-display-button" (click)="viewBreederPage()">View Breeder Page</button>
+    </div>
+        <div class="image-container">
+            <img src="/../../assets/images/lab1.jpg" alt="dog-image" class="display-image">
+        </div>
+    </div>
+</div>

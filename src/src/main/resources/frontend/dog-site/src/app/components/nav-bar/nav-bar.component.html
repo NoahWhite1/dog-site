@@ -1,0 +1,18 @@
+<mat-toolbar>
+
+  <span class="nav-menu">
+    <button mat-flat-button (click) = "homePage()">Home</button>
+    <button mat-flat-button (click) = "breederPage()">Breeders</button>
+    <button mat-button [matMenuTriggerFor]="menu" *ngIf = "isSignedIn">Breeder Menu</button>
+
+    <mat-menu #menu="matMenu" class="mat-menu-content">
+      <button mat-menu-item class = "breeder-menu-dropdown-item" (click)="myProfile()">My Profile</button>
+      <button mat-menu-item class = "breeder-menu-dropdown-item" (click) = "createDog()">Add dog</button>
+    </mat-menu>
+    </span>
+
+  </mat-toolbar>
+
+  <app-create-puppy-display></app-create-puppy-display>
+
+ 

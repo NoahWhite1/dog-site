@@ -1,0 +1,50 @@
+#background{
+    background-color: RGB(0,183,194);
+    width: 100%;
+    min-height: 100%;
+    max-width: 100%;
+}
+
+::ng-deep .mat-select-arrow,
+::ng-deep .mat-select-arrow.mat-selected,
+::ng-deep .mat-select-value,
+.dog-select{
+    color: white !important;
+}
+
+::ng-deep .mat-form-field-infix{
+    background-color: #1a7dbe !important;
+    border-radius: 5px;
+}
+
+.dog-dropdown{
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+    margin-top: auto;
+    margin-left:2.5%;
+    margin-right: 2.5%;
+
+}
+
+::ng-deep ::-webkit-scrollbar {
+    width: 15px;
+}
+::ng-deep ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px white;
+    border: 1px solid rgb(253, 203, 158); 
+    border-radius: 5px;
+    background-color: #0F4C75;
+
+}
+::ng-deep ::-webkit-scrollbar-thumb {
+    background: #1a7dbe;
+    border: 1px solid rgb(253, 203, 158);
+    border-radius: 10px;
+}
+
+::ng-deep ::-webkit-scrollbar-thumb:hover {
+    background: white; 
+}

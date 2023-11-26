@@ -1,0 +1,105 @@
+.create-dog-container{
+    background-color: rgba(0, 0, 0, 0.37);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    color: white;
+    position: fixed;
+    z-index: 100;
+    margin: auto;
+}
+
+.add-dog-title{
+    color: white;
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    margin: auto;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+input::placeholder {
+    color: rgb(175, 175, 175);
+}
+
+input{
+    caret-color: white;
+}
+
+.data-input{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    width: fit-content;
+    flex-wrap: wrap;
+    color: white;
+}
+
+.create-dog-display{
+    flex-direction: column;
+    display: flex;
+    background-color: #0F4C75;
+    border: 1px solid rgb(253, 203, 158);
+    border-radius: 10px;
+    width: 25%;
+    height: 62.5%;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.create-dog-button{
+    background-color: #1a7dbe;
+    border: 1px solid rgb(253, 203, 158);
+    color: white;
+    width: 70%;
+    height: 10%;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom:2.5%;
+}
+
+.create-dog-exit-button{
+    border: 1px solid rgb(253, 203, 158);
+    height: 7%;
+    width: 15%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    background-color: red;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    color: white;
+    margin-left: auto;
+    margin-top: 2.5%;
+    margin-right: 2.5%;
+}
+
+.input-title{
+    color: white;
+}
+
+::ng-deep .mat-form-field-appearance-outline .mat-form-field-outline {
+    border: 2px solid rgb(253, 203, 158) !important;
+    border-radius: 4px;
+}
+
+::ng-deep .mat-form-field-appearance-outline.mat-focused .mat-form-field-outline-thick {
+    color: white!important;
+}
+
+::ng-deep .mat-form-field-infix {
+    background-color: transparent !important;
+    border-radius: 0;
+}
